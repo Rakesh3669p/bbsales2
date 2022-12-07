@@ -1,0 +1,88 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/popMenuLayout"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:layout_gravity="end"
+    >
+
+    <View
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:background="@drawable/pop_up_bg"
+        android:elevation="@dimen/_5sdp"
+        app:layout_constraintStart_toStartOf="@id/followUpVisit"
+        app:layout_constraintEnd_toEndOf="@id/followUpVisit"
+        app:layout_constraintTop_toTopOf="@id/editCustomer"
+        app:layout_constraintBottom_toBottomOf="@id/followUpVisit"/>
+    <TextView
+        android:id="@+id/editCustomer"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:fontFamily="@font/poppins_medium"
+        android:paddingHorizontal="@dimen/_15sdp"
+        android:paddingVertical="@dimen/_8sdp"
+        android:text="Edit Customer"
+        android:elevation="@dimen/_5sdp"
+        android:textColor="@color/black_200"
+        android:textSize="@dimen/_8sdp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <View
+        android:id="@+id/divider"
+        android:layout_width="@dimen/_70sdp"
+        android:layout_height="1sp"
+        android:background="@color/black_200"
+        android:layout_marginHorizontal="@dimen/_5sdp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:elevation="@dimen/_5sdp"
+        app:layout_constraintTop_toBottomOf="@id/editCustomer" />
+
+    <TextView
+        android:id="@+id/followUpVisit"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:fontFamily="@font/poppins_medium"
+        android:paddingHorizontal="@dimen/_10sdp"
+        android:paddingVertical="@dimen/_8sdp"
+        android:text="Follow Up Visit"
+        android:textColor="@color/black_200"
+        android:textSize="@dimen/_8sdp"
+        android:gravity="center"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        android:elevation="@dimen/_5sdp"
+        app:layout_constraintTop_toBottomOf="@+id/divider" />
+
+    <View
+        android:id="@+id/divider1"
+        android:layout_width="@dimen/_70sdp"
+        android:layout_height="1sp"
+        android:background="@color/black_200"
+        android:layout_marginHorizontal="@dimen/_5sdp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:elevation="@dimen/_5sdp"
+        app:layout_constraintTop_toBottomOf="@id/followUpVisit" />
+
+    <TextView
+        android:id="@+id/deleteCustomer"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:fontFamily="@font/poppins_medium"
+        android:paddingHorizontal="@dimen/_10sdp"
+        android:paddingVertical="@dimen/_8sdp"
+        android:text="Delete Customer"
+        android:textColor="@color/black_200"
+        android:textSize="@dimen/_8sdp"
+        android:gravity="center"
+        android:visibility="gone"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        android:elevation="@dimen/_5sdp"
+        app:layout_constraintTop_toBottomOf="@+id/divider1" />
+</androidx.constraintlayout.widget.ConstraintLayout>

@@ -1,0 +1,190 @@
+[
+    {
+        "merged": "/Volumes/Volume_2/upwork/BigBasketSalesAppGit/app/build/intermediates/incremental/mergeDebugResources/stripped.dir/layout/fragment_notifications_messages.xml",
+        "source": "/Volumes/Volume_2/upwork/BigBasketSalesAppGit/app/src/main/res/layout/fragment_notifications_messages.xml"
+    },
+    {
+        "merged": "/Volumes/Volume_2/upwork/BigBasketSalesAppGit/app/build/intermediates/incremental/mergeDebugResources/stripped.dir/layout/bb_loader.xml",
+        "source": "/Volumes/Volume_2/upwork/BigBasketSalesAppGit/app/src/main/res/layout/bb_loader.xml"
+    },
+    {
+        "merged": "/Volumes/Volume_2/upwork/BigBasketSalesAppGit/app/build/intermediates/incremental/mergeDebugResources/stripped.dir/layout/item_chat_users.xml",
+        "source": "/Volumes/Volume_2/upwork/BigBasketSalesAppGit/app/src/main/res/layout/item_chat_users.xml"
+    },
+    {
+        "merged": "/Volumes/Volume_2/upwork/BigBasketSalesAppGit/app/build/intermediates/incremental/mergeDebugResources/stripped.dir/layout/fragment_address.xml",
+        "source": "/Volumes/Volume_2/upwork/BigBasketSalesAppGit/app/src/main/res/layout/fragment_address.xml"
+    },
+    {
+        "merged": "/Volumes/Volume_2/upwork/BigBasketSalesAppGit/app/build/intermediates/incremental/mergeDebugResources/stripped.dir/layout/fragment_profile.xml",
+        "source": "/Volumes/Volume_2/upwork/BigBasketSalesAppGit/app/src/main/res/layout/fragment_profile.xml"
+    },
+    {
+        "merged": "/Volumes/Volume_2/upwork/BigBasketSalesAppGit/app/build/intermediates/incremental/mergeDebugResources/stripped.dir/layout/fragment_business_details_form.xml",
+        "source": "/Volumes/Volume_2/upwork/BigBasketSalesAppGit/app/src/main/res/layout/fragment_business_details_form.xml"
+    },
+    {
+        "merged": "/Volumes/Volume_2/upwork/BigBasketSalesAppGit/app/build/intermediates/incremental/mergeDebugResources/stripped.dir/layout/activity_login_signup.xml",
+        "source": "/Volumes/Volume_2/upwork/BigBasketSalesAppGit/app/src/main/res/layout/activity_login_signup.xml"
+    },
+    {
+        "merged": "/Volumes/Volume_2/upwork/BigBasketSalesAppGit/app/build/intermediates/incremental/mergeDebugResources/stripped.dir/layout/activity_main.xml",
+        "source": "/Volumes/Volume_2/upwork/BigBasketSalesAppGit/app/src/main/res/layout/activity_main.xml"
+    },
+    {
+        "merged": "/Volumes/Volume_2/upwork/BigBasketSalesAppGit/app/build/intermediates/incremental/mergeDebugResources/stripped.dir/layout/download_bb_loader.xml",
+        "source": "/Volumes/Volume_2/upwork/BigBasketSalesAppGit/app/src/main/res/layout/download_bb_loader.xml"
+    },
+    {
+        "merged": "/Volumes/Volume_2/upwork/BigBasketSalesAppGit/app/build/intermediates/incremental/mergeDebugResources/stripped.dir/layout/item_add_followup_coupons.xml",
+        "source": "/Volumes/Volume_2/upwork/BigBasketSalesAppGit/app/src/main/res/layout/item_add_followup_coupons.xml"
+    },
+    {
+        "merged": "/Volumes/Volume_2/upwork/BigBasketSalesAppGit/app/build/intermediates/incremental/mergeDebugResources/stripped.dir/layout/spinner_text_products.xml",
+        "source": "/Volumes/Volume_2/upwork/BigBasketSalesAppGit/app/src/main/res/layout/spinner_text_products.xml"
+    },
+    {
+        "merged": "/Volumes/Volume_2/upwork/BigBasketSalesAppGit/app/build/intermediates/incremental/mergeDebugResources/stripped.dir/layout/fragment_basic_details_form.xml",
+        "source": "/Volumes/Volume_2/upwork/BigBasketSalesAppGit/app/src/main/res/layout/fragment_basic_details_form.xml"
+    },
+    {
+        "merged": "/Volumes/Volume_2/upwork/BigBasketSalesAppGit/app/build/intermediates/incremental/mergeDebugResources/stripped.dir/layout/fragment_forgot_password.xml",
+        "source": "/Volumes/Volume_2/upwork/BigBasketSalesAppGit/app/src/main/res/layout/fragment_forgot_password.xml"
+    },
+    {
+        "merged": "/Volumes/Volume_2/upwork/BigBasketSalesAppGit/app/build/intermediates/incremental/mergeDebugResources/stripped.dir/layout/activity_place_picker.xml",
+        "source": "/Volumes/Volume_2/upwork/BigBasketSalesAppGit/app/src/main/res/layout/activity_place_picker.xml"
+    },
+    {
+        "merged": "/Volumes/Volume_2/upwork/BigBasketSalesAppGit/app/build/intermediates/incremental/mergeDebugResources/stripped.dir/layout/left_chat.xml",
+        "source": "/Volumes/Volume_2/upwork/BigBasketSalesAppGit/app/src/main/res/layout/left_chat.xml"
+    },
+    {
+        "merged": "/Volumes/Volume_2/upwork/BigBasketSalesAppGit/app/build/intermediates/incremental/mergeDebugResources/stripped.dir/layout/item_notification_list.xml",
+        "source": "/Volumes/Volume_2/upwork/BigBasketSalesAppGit/app/src/main/res/layout/item_notification_list.xml"
+    },
+    {
+        "merged": "/Volumes/Volume_2/upwork/BigBasketSalesAppGit/app/build/intermediates/incremental/mergeDebugResources/stripped.dir/layout/customer_pop_up.xml",
+        "source": "/Volumes/Volume_2/upwork/BigBasketSalesAppGit/app/src/main/res/layout/customer_pop_up.xml"
+    },
+    {
+        "merged": "/Volumes/Volume_2/upwork/BigBasketSalesAppGit/app/build/intermediates/incremental/mergeDebugResources/stripped.dir/layout/fragment_offers.xml",
+        "source": "/Volumes/Volume_2/upwork/BigBasketSalesAppGit/app/src/main/res/layout/fragment_offers.xml"
+    },
+    {
+        "merged": "/Volumes/Volume_2/upwork/BigBasketSalesAppGit/app/build/intermediates/incremental/mergeDebugResources/stripped.dir/layout/item_follow_ups.xml",
+        "source": "/Volumes/Volume_2/upwork/BigBasketSalesAppGit/app/src/main/res/layout/item_follow_ups.xml"
+    },
+    {
+        "merged": "/Volumes/Volume_2/upwork/BigBasketSalesAppGit/app/build/intermediates/incremental/mergeDebugResources/stripped.dir/layout/fragment_login.xml",
+        "source": "/Volumes/Volume_2/upwork/BigBasketSalesAppGit/app/src/main/res/layout/fragment_login.xml"
+    },
+    {
+        "merged": "/Volumes/Volume_2/upwork/BigBasketSalesAppGit/app/build/intermediates/incremental/mergeDebugResources/stripped.dir/layout/fragment_target_vs_sales.xml",
+        "source": "/Volumes/Volume_2/upwork/BigBasketSalesAppGit/app/src/main/res/layout/fragment_target_vs_sales.xml"
+    },
+    {
+        "merged": "/Volumes/Volume_2/upwork/BigBasketSalesAppGit/app/build/intermediates/incremental/mergeDebugResources/stripped.dir/layout/spinner_text.xml",
+        "source": "/Volumes/Volume_2/upwork/BigBasketSalesAppGit/app/src/main/res/layout/spinner_text.xml"
+    },
+    {
+        "merged": "/Volumes/Volume_2/upwork/BigBasketSalesAppGit/app/build/intermediates/incremental/mergeDebugResources/stripped.dir/layout/fragment_revenue.xml",
+        "source": "/Volumes/Volume_2/upwork/BigBasketSalesAppGit/app/src/main/res/layout/fragment_revenue.xml"
+    },
+    {
+        "merged": "/Volumes/Volume_2/upwork/BigBasketSalesAppGit/app/build/intermediates/incremental/mergeDebugResources/stripped.dir/layout/fragment_add_customer.xml",
+        "source": "/Volumes/Volume_2/upwork/BigBasketSalesAppGit/app/src/main/res/layout/fragment_add_customer.xml"
+    },
+    {
+        "merged": "/Volumes/Volume_2/upwork/BigBasketSalesAppGit/app/build/intermediates/incremental/mergeDebugResources/stripped.dir/layout/right_chat.xml",
+        "source": "/Volumes/Volume_2/upwork/BigBasketSalesAppGit/app/src/main/res/layout/right_chat.xml"
+    },
+    {
+        "merged": "/Volumes/Volume_2/upwork/BigBasketSalesAppGit/app/build/intermediates/incremental/mergeDebugResources/stripped.dir/layout/fragment_change_password.xml",
+        "source": "/Volumes/Volume_2/upwork/BigBasketSalesAppGit/app/src/main/res/layout/fragment_change_password.xml"
+    },
+    {
+        "merged": "/Volumes/Volume_2/upwork/BigBasketSalesAppGit/app/build/intermediates/incremental/mergeDebugResources/stripped.dir/layout/fragment_otp.xml",
+        "source": "/Volumes/Volume_2/upwork/BigBasketSalesAppGit/app/src/main/res/layout/fragment_otp.xml"
+    },
+    {
+        "merged": "/Volumes/Volume_2/upwork/BigBasketSalesAppGit/app/build/intermediates/incremental/mergeDebugResources/stripped.dir/layout/fragment_chat.xml",
+        "source": "/Volumes/Volume_2/upwork/BigBasketSalesAppGit/app/src/main/res/layout/fragment_chat.xml"
+    },
+    {
+        "merged": "/Volumes/Volume_2/upwork/BigBasketSalesAppGit/app/build/intermediates/incremental/mergeDebugResources/stripped.dir/layout/item_cutomers.xml",
+        "source": "/Volumes/Volume_2/upwork/BigBasketSalesAppGit/app/src/main/res/layout/item_cutomers.xml"
+    },
+    {
+        "merged": "/Volumes/Volume_2/upwork/BigBasketSalesAppGit/app/build/intermediates/incremental/mergeDebugResources/stripped.dir/layout/fragment_message_list.xml",
+        "source": "/Volumes/Volume_2/upwork/BigBasketSalesAppGit/app/src/main/res/layout/fragment_message_list.xml"
+    },
+    {
+        "merged": "/Volumes/Volume_2/upwork/BigBasketSalesAppGit/app/build/intermediates/incremental/mergeDebugResources/stripped.dir/layout/fragment_change_password_login.xml",
+        "source": "/Volumes/Volume_2/upwork/BigBasketSalesAppGit/app/src/main/res/layout/fragment_change_password_login.xml"
+    },
+    {
+        "merged": "/Volumes/Volume_2/upwork/BigBasketSalesAppGit/app/build/intermediates/incremental/mergeDebugResources/stripped.dir/layout/fragment_statistics.xml",
+        "source": "/Volumes/Volume_2/upwork/BigBasketSalesAppGit/app/src/main/res/layout/fragment_statistics.xml"
+    },
+    {
+        "merged": "/Volumes/Volume_2/upwork/BigBasketSalesAppGit/app/build/intermediates/incremental/mergeDebugResources/stripped.dir/layout/item_revenue.xml",
+        "source": "/Volumes/Volume_2/upwork/BigBasketSalesAppGit/app/src/main/res/layout/item_revenue.xml"
+    },
+    {
+        "merged": "/Volumes/Volume_2/upwork/BigBasketSalesAppGit/app/build/intermediates/incremental/mergeDebugResources/stripped.dir/layout/fragment_location.xml",
+        "source": "/Volumes/Volume_2/upwork/BigBasketSalesAppGit/app/src/main/res/layout/fragment_location.xml"
+    },
+    {
+        "merged": "/Volumes/Volume_2/upwork/BigBasketSalesAppGit/app/build/intermediates/incremental/mergeDebugResources/stripped.dir/layout/fragment_customers_list.xml",
+        "source": "/Volumes/Volume_2/upwork/BigBasketSalesAppGit/app/src/main/res/layout/fragment_customers_list.xml"
+    },
+    {
+        "merged": "/Volumes/Volume_2/upwork/BigBasketSalesAppGit/app/build/intermediates/incremental/mergeDebugResources/stripped.dir/layout/fragment_edit_profile.xml",
+        "source": "/Volumes/Volume_2/upwork/BigBasketSalesAppGit/app/src/main/res/layout/fragment_edit_profile.xml"
+    },
+    {
+        "merged": "/Volumes/Volume_2/upwork/BigBasketSalesAppGit/app/build/intermediates/incremental/mergeDebugResources/stripped.dir/layout/item_notifications.xml",
+        "source": "/Volumes/Volume_2/upwork/BigBasketSalesAppGit/app/src/main/res/layout/item_notifications.xml"
+    },
+    {
+        "merged": "/Volumes/Volume_2/upwork/BigBasketSalesAppGit/app/build/intermediates/incremental/mergeDebugResources/stripped.dir/layout/fragment_add_follow_ups.xml",
+        "source": "/Volumes/Volume_2/upwork/BigBasketSalesAppGit/app/src/main/res/layout/fragment_add_follow_ups.xml"
+    },
+    {
+        "merged": "/Volumes/Volume_2/upwork/BigBasketSalesAppGit/app/build/intermediates/incremental/mergeDebugResources/stripped.dir/layout/fragment_notification_list.xml",
+        "source": "/Volumes/Volume_2/upwork/BigBasketSalesAppGit/app/src/main/res/layout/fragment_notification_list.xml"
+    },
+    {
+        "merged": "/Volumes/Volume_2/upwork/BigBasketSalesAppGit/app/build/intermediates/incremental/mergeDebugResources/stripped.dir/layout/fragment_product_list.xml",
+        "source": "/Volumes/Volume_2/upwork/BigBasketSalesAppGit/app/src/main/res/layout/fragment_product_list.xml"
+    },
+    {
+        "merged": "/Volumes/Volume_2/upwork/BigBasketSalesAppGit/app/build/intermediates/incremental/mergeDebugResources/stripped.dir/layout/item_offers.xml",
+        "source": "/Volumes/Volume_2/upwork/BigBasketSalesAppGit/app/src/main/res/layout/item_offers.xml"
+    },
+    {
+        "merged": "/Volumes/Volume_2/upwork/BigBasketSalesAppGit/app/build/intermediates/incremental/mergeDebugResources/stripped.dir/layout/item_product_list.xml",
+        "source": "/Volumes/Volume_2/upwork/BigBasketSalesAppGit/app/src/main/res/layout/item_product_list.xml"
+    },
+    {
+        "merged": "/Volumes/Volume_2/upwork/BigBasketSalesAppGit/app/build/intermediates/incremental/mergeDebugResources/stripped.dir/layout/fragment_follow_up_list.xml",
+        "source": "/Volumes/Volume_2/upwork/BigBasketSalesAppGit/app/src/main/res/layout/fragment_follow_up_list.xml"
+    },
+    {
+        "merged": "/Volumes/Volume_2/upwork/BigBasketSalesAppGit/app/build/intermediates/incremental/mergeDebugResources/stripped.dir/layout/fragment_edit_customer.xml",
+        "source": "/Volumes/Volume_2/upwork/BigBasketSalesAppGit/app/src/main/res/layout/fragment_edit_customer.xml"
+    },
+    {
+        "merged": "/Volumes/Volume_2/upwork/BigBasketSalesAppGit/app/build/intermediates/incremental/mergeDebugResources/stripped.dir/layout/item_message_list.xml",
+        "source": "/Volumes/Volume_2/upwork/BigBasketSalesAppGit/app/src/main/res/layout/item_message_list.xml"
+    },
+    {
+        "merged": "/Volumes/Volume_2/upwork/BigBasketSalesAppGit/app/build/intermediates/incremental/mergeDebugResources/stripped.dir/layout/item_offer.xml",
+        "source": "/Volumes/Volume_2/upwork/BigBasketSalesAppGit/app/src/main/res/layout/item_offer.xml"
+    },
+    {
+        "merged": "/Volumes/Volume_2/upwork/BigBasketSalesAppGit/app/build/intermediates/incremental/mergeDebugResources/stripped.dir/layout/fragment_home.xml",
+        "source": "/Volumes/Volume_2/upwork/BigBasketSalesAppGit/app/src/main/res/layout/fragment_home.xml"
+    }
+]

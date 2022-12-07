@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/navigation_login_signup"
+    app:startDestination="@id/loginFragment">
+
+    <fragment
+        android:id="@+id/loginFragment"
+        android:name="com.bb.bigbasketsalesapp.ui.loginSignUp.LoginFragment"
+        android:label="fragment_login"
+        tools:layout="@layout/fragment_login" />
+    <fragment
+        android:id="@+id/forgotPasswordFragment"
+        android:name="com.bb.bigbasketsalesapp.ui.loginSignUp.ForgotPasswordFragment"
+        android:label="fragment_forgot_password"
+        tools:layout="@layout/fragment_forgot_password" >
+        <action
+            android:id="@+id/action_forgotPasswordFragment_to_hilt_OTPFragment"
+            app:destination="@id/OTPFragment"
+            app:popUpTo="@id/forgotPasswordFragment"
+            app:popUpToInclusive="true"/>
+    </fragment>
+    <fragment
+        android:id="@+id/OTPFragment"
+        android:name="com.bb.bigbasketsalesapp.ui.loginSignUp.OTPFragment"
+        android:label="OTPFragment"
+        tools:layout="@layout/fragment_otp"/>
+    <fragment
+        android:id="@+id/changePasswordFragment"
+        android:name="com.bb.bigbasketsalesapp.ui.loginSignUp.ChangePasswordFragment"
+        android:label="ChangePasswordFragment"
+        tools:layout="@layout/fragment_change_password">
+        <action
+            android:id="@+id/action_changePasswordFragment_to_loginFragment"
+            app:destination="@id/loginFragment"
+            app:popUpTo="@id/changePasswordFragment"
+            app:popUpToInclusive="true"/>
+    </fragment>
+
+
+</navigation>

@@ -1,0 +1,751 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.core.widget.NestedScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    android:fillViewport="true"
+    tools:context=".ui.fragments.home.HomeFragment">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+        <View
+            android:visibility="gone"
+            android:id="@+id/loader"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:background="@color/white"
+            android:elevation="@dimen/_3sdp"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintBottom_toBottomOf="parent"/>
+        <TextView
+            android:id="@+id/welcomeLbl"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="@dimen/_10sdp"
+            android:layout_marginTop="@dimen/_10sdp"
+            android:fontFamily="@font/poppins_medium"
+            android:text="@string/welcome_lbl"
+            android:textColor="@color/blue"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <TextView
+            android:id="@+id/userName"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/poppins_semibold"
+            android:text="John Dio"
+            android:textColor="@color/blue"
+            android:textSize="@dimen/_14sdp"
+            app:layout_constraintStart_toStartOf="@id/welcomeLbl"
+            app:layout_constraintTop_toBottomOf="@+id/welcomeLbl" />
+
+        <ImageView
+            android:id="@+id/notification"
+            android:layout_width="@dimen/_20sdp"
+            android:layout_height="@dimen/_20sdp"
+            android:layout_marginEnd="@dimen/_8sdp"
+            android:src="@drawable/ic_notification"
+            app:layout_constraintBottom_toBottomOf="@id/userProfile"
+            app:layout_constraintEnd_toStartOf="@+id/userProfile"
+            app:layout_constraintTop_toTopOf="@id/userProfile" />
+
+        <androidx.constraintlayout.utils.widget.ImageFilterView
+            android:id="@+id/notificationAvailable"
+            android:layout_width="@dimen/_10sdp"
+            android:layout_height="@dimen/_10sdp"
+            app:roundPercent="1"
+            android:src="@color/yellow"
+            android:layout_marginStart="@dimen/_11sdp"
+            android:layout_marginBottom="@dimen/_14sdp"
+            app:layout_constraintStart_toStartOf="@id/notification"
+            app:layout_constraintBottom_toBottomOf="@id/notification"
+            app:layout_constraintEnd_toEndOf="@id/notification"
+            app:layout_constraintTop_toTopOf="@id/notification" />
+
+        <androidx.constraintlayout.utils.widget.ImageFilterView
+            android:id="@+id/userProfile"
+            android:layout_width="@dimen/_30sdp"
+            android:layout_height="@dimen/_30sdp"
+            android:layout_margin="@dimen/_10sdp"
+            android:src="@drawable/ic_user_image"
+            app:roundPercent="1"
+            android:scaleType="fitXY"
+            app:layout_constraintBottom_toBottomOf="@id/userName"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toTopOf="@id/welcomeLbl" />
+
+        <TextView
+            android:id="@+id/totalRevenueMonthlyLbl"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/_10sdp"
+            android:fontFamily="@font/poppins_medium"
+            android:text="Total Revenue Monthly"
+            android:textColor="#7062f0"
+            android:textSize="@dimen/_8sdp"
+            app:layout_constraintStart_toStartOf="@id/welcomeLbl"
+            app:layout_constraintTop_toBottomOf="@+id/userName" />
+
+        <ProgressBar
+            android:id="@+id/monthlyRevenueProgress"
+            style="?android:attr/progressBarStyleHorizontal"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/_18sdp"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginHorizontal="@dimen/_10sdp"
+            android:layout_marginTop="@dimen/_3sdp"
+            android:progress="20"
+            android:progressDrawable="@drawable/purple_progress"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/totalRevenueMonthlyLbl" />
+
+        <TextView
+            android:id="@+id/customerRevenueLbl"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/_10sdp"
+            android:fontFamily="@font/poppins_medium"
+            android:text="Revenue Per Customer"
+            android:textColor="#ec5355"
+            android:textSize="@dimen/_8sdp"
+            app:layout_constraintStart_toStartOf="@id/welcomeLbl"
+            app:layout_constraintTop_toBottomOf="@+id/monthlyRevenueProgress" />
+
+        <ProgressBar
+            android:id="@+id/customerRevenueProgress"
+            style="?android:attr/progressBarStyleHorizontal"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/_18sdp"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginHorizontal="@dimen/_10sdp"
+            android:layout_marginTop="@dimen/_3sdp"
+            android:progress="40"
+            android:progressDrawable="@drawable/red_progress"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/customerRevenueLbl" />
+
+        <TextView
+            android:id="@+id/newCustomersLbl"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/_10sdp"
+            android:fontFamily="@font/poppins_medium"
+            android:text="New Customers"
+            android:textColor="#0070b5"
+            android:textSize="@dimen/_8sdp"
+            app:layout_constraintStart_toStartOf="@id/welcomeLbl"
+            app:layout_constraintTop_toBottomOf="@+id/customerRevenueProgress" />
+
+
+        <ProgressBar
+            android:id="@+id/newCustomersProgress"
+            style="?android:attr/progressBarStyleHorizontal"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/_18sdp"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginHorizontal="@dimen/_10sdp"
+            android:layout_marginTop="@dimen/_3sdp"
+            android:progress="60"
+            android:progressDrawable="@drawable/blue_progress"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/newCustomersLbl" />
+
+        <TextView
+            android:id="@+id/noOfShopsLbl"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/_10sdp"
+            android:fontFamily="@font/poppins_medium"
+            android:text="No. Of Shops Visit"
+            android:textColor="#3ab95c"
+            android:textSize="@dimen/_8sdp"
+            app:layout_constraintStart_toStartOf="@id/welcomeLbl"
+            app:layout_constraintTop_toBottomOf="@+id/newCustomersProgress" />
+
+
+        <ProgressBar
+            android:id="@+id/noOfShopsProgress"
+            style="?android:attr/progressBarStyleHorizontal"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/_18sdp"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginHorizontal="@dimen/_10sdp"
+            android:layout_marginTop="@dimen/_3sdp"
+            android:progress="80"
+            android:progressDrawable="@drawable/green_progress"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/noOfShopsLbl" />
+
+
+        <View
+            android:id="@+id/monthlyRevenueBg"
+            android:layout_width="0dp"
+            android:layout_height="@dimen/_65sdp"
+            android:layout_marginTop="@dimen/_15sdp"
+            android:layout_marginEnd="@dimen/_5sdp"
+            android:background="@color/white"
+            android:elevation="@dimen/_2sdp"
+            app:layout_constraintEnd_toStartOf="@+id/customerRevenueBg"
+            app:layout_constraintStart_toStartOf="@id/welcomeLbl"
+            app:layout_constraintTop_toBottomOf="@+id/noOfShopsProgress" />
+
+        <View
+            android:id="@+id/purpleStick"
+            android:layout_width="@dimen/_4sdp"
+            android:layout_height="0dp"
+            android:background="@drawable/purple_gradient"
+            android:elevation="@dimen/_2sdp"
+            app:layout_constraintBottom_toBottomOf="@id/monthlyRevenueBg"
+            app:layout_constraintStart_toStartOf="@id/monthlyRevenueBg"
+            app:layout_constraintTop_toTopOf="@id/monthlyRevenueBg" />
+
+        <ImageView
+            android:id="@+id/totalRevenueMonthlyIcon"
+            android:layout_width="@dimen/_25sdp"
+            android:layout_height="@dimen/_25sdp"
+            android:layout_marginStart="@dimen/_5sdp"
+            android:elevation="@dimen/_2sdp"
+            android:src="@drawable/ic_rev_month"
+            app:layout_constraintBottom_toBottomOf="@id/purpleStick"
+            app:layout_constraintStart_toEndOf="@+id/purpleStick"
+            app:layout_constraintTop_toTopOf="@id/purpleStick" />
+
+        <TextView
+            android:id="@+id/totalRevenueMonthly1Lbl"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="@dimen/_10sdp"
+            android:elevation="@dimen/_2sdp"
+            android:fontFamily="@font/poppins_medium"
+            android:text="Total Revenue Monthly"
+            android:textColor="#7062f0"
+            android:textSize="@dimen/_8sdp"
+            app:layout_constraintBottom_toTopOf="@id/totalRevenueMonthly"
+            app:layout_constraintStart_toEndOf="@id/totalRevenueMonthlyIcon"
+            app:layout_constraintTop_toTopOf="@id/purpleStick"
+            app:layout_constraintVertical_chainStyle="packed" />
+
+        <TextView
+            android:id="@+id/totalRevenueMonthly"
+            android:layout_width="wrap_content"
+            android:layout_height="@dimen/_25sdp"
+            android:layout_marginStart="@dimen/_10sdp"
+            android:elevation="@dimen/_2sdp"
+            android:fontFamily="@font/poppins_bold"
+            android:text="1.85M"
+            android:textColor="@color/black"
+            android:textSize="@dimen/_18sdp"
+            app:layout_constraintBottom_toBottomOf="@id/purpleStick"
+            app:layout_constraintStart_toEndOf="@id/totalRevenueMonthlyIcon"
+            app:layout_constraintTop_toBottomOf="@+id/totalRevenueMonthly1Lbl" />
+
+        <TextView
+            android:id="@+id/totalRevenueMonthlyCurrency"
+            android:layout_width="wrap_content"
+            android:layout_height="0dp"
+            android:layout_marginStart="@dimen/_4sdp"
+            android:elevation="@dimen/_2sdp"
+            android:fontFamily="@font/poppins_medium"
+            android:text="SAR"
+            android:textColor="@color/black"
+            android:textSize="@dimen/_10sdp"
+            app:layout_constraintBottom_toBottomOf="@id/totalRevenueMonthly"
+            app:layout_constraintStart_toEndOf="@id/totalRevenueMonthly" />
+
+
+        <View
+            android:id="@+id/customerRevenueBg"
+            android:layout_width="0dp"
+            android:layout_height="@dimen/_65sdp"
+            android:layout_marginStart="@dimen/_5sdp"
+            android:background="@color/white"
+            android:elevation="@dimen/_2sdp"
+            app:layout_constraintBottom_toBottomOf="@+id/monthlyRevenueBg"
+            app:layout_constraintEnd_toEndOf="@+id/userProfile"
+            app:layout_constraintStart_toEndOf="@id/monthlyRevenueBg"
+            app:layout_constraintTop_toTopOf="@+id/monthlyRevenueBg" />
+
+        <View
+            android:id="@+id/redStick"
+            android:layout_width="@dimen/_4sdp"
+            android:layout_height="0dp"
+            android:background="@drawable/red_gradient"
+            android:elevation="@dimen/_2sdp"
+            app:layout_constraintBottom_toBottomOf="@id/customerRevenueBg"
+            app:layout_constraintStart_toStartOf="@id/customerRevenueBg"
+            app:layout_constraintTop_toTopOf="@id/customerRevenueBg" />
+
+        <ImageView
+            android:id="@+id/customerRevenueBgIcon"
+            android:layout_width="@dimen/_25sdp"
+            android:layout_height="@dimen/_25sdp"
+            android:layout_marginStart="@dimen/_5sdp"
+            android:elevation="@dimen/_2sdp"
+            android:src="@drawable/ic_rev_per"
+            app:layout_constraintBottom_toBottomOf="@id/redStick"
+            app:layout_constraintStart_toEndOf="@+id/redStick"
+            app:layout_constraintTop_toTopOf="@id/redStick" />
+
+        <TextView
+            android:id="@+id/customerRevenue1Lbl"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="@dimen/_10sdp"
+            android:elevation="@dimen/_2sdp"
+            android:fontFamily="@font/poppins_medium"
+            android:text="Revenue Per Customer"
+            android:textColor="#ec5355"
+            android:textSize="@dimen/_8sdp"
+            app:layout_constraintBottom_toTopOf="@id/customerRevenue"
+            app:layout_constraintStart_toEndOf="@id/customerRevenueBgIcon"
+            app:layout_constraintTop_toTopOf="@id/redStick"
+            app:layout_constraintVertical_chainStyle="packed" />
+
+        <TextView
+            android:id="@+id/customerRevenue"
+            android:layout_width="wrap_content"
+            android:layout_height="@dimen/_25sdp"
+            android:layout_marginStart="@dimen/_10sdp"
+            android:elevation="@dimen/_2sdp"
+            android:fontFamily="@font/poppins_bold"
+            android:text="15,000"
+            android:textColor="@color/black"
+            android:textSize="@dimen/_18sdp"
+            app:layout_constraintBottom_toBottomOf="@id/purpleStick"
+            app:layout_constraintStart_toEndOf="@id/customerRevenueBgIcon"
+            app:layout_constraintTop_toBottomOf="@+id/customerRevenue1Lbl" />
+
+        <TextView
+            android:id="@+id/customerRevenueCurrency"
+            android:layout_width="wrap_content"
+            android:layout_height="0dp"
+            android:layout_marginStart="@dimen/_4sdp"
+            android:elevation="@dimen/_2sdp"
+            android:fontFamily="@font/poppins_medium"
+            android:text="SAR"
+            android:textColor="@color/black"
+            android:textSize="@dimen/_10sdp"
+            app:layout_constraintBottom_toBottomOf="@id/customerRevenue"
+            app:layout_constraintStart_toEndOf="@id/customerRevenue" />
+
+        <View
+            android:id="@+id/newCustomersBg"
+            android:layout_width="0dp"
+            android:layout_height="@dimen/_65sdp"
+            android:layout_marginTop="@dimen/_15sdp"
+            android:layout_marginEnd="@dimen/_5sdp"
+            android:background="@color/white"
+            android:elevation="@dimen/_2sdp"
+            app:layout_constraintEnd_toStartOf="@+id/noOfShopsBg"
+            app:layout_constraintStart_toStartOf="@id/welcomeLbl"
+            app:layout_constraintTop_toBottomOf="@+id/customerRevenueBg" />
+
+        <View
+            android:id="@+id/blueStick"
+            android:layout_width="@dimen/_4sdp"
+            android:layout_height="0dp"
+            android:background="@drawable/blue_gradient"
+            android:elevation="@dimen/_2sdp"
+            app:layout_constraintBottom_toBottomOf="@id/newCustomersBg"
+            app:layout_constraintStart_toStartOf="@id/newCustomersBg"
+            app:layout_constraintTop_toTopOf="@id/newCustomersBg" />
+
+        <ImageView
+            android:id="@+id/newCustomersBgIcon"
+            android:layout_width="@dimen/_25sdp"
+            android:layout_height="@dimen/_25sdp"
+            android:layout_marginStart="@dimen/_5sdp"
+            android:elevation="@dimen/_2sdp"
+            android:src="@drawable/ic_new_customers"
+            app:layout_constraintBottom_toBottomOf="@id/blueStick"
+            app:layout_constraintStart_toEndOf="@+id/blueStick"
+            app:layout_constraintTop_toTopOf="@id/blueStick" />
+
+        <TextView
+            android:id="@+id/newCustomer1Lbl"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="@dimen/_10sdp"
+            android:elevation="@dimen/_2sdp"
+            android:fontFamily="@font/poppins_medium"
+            android:text="New Customers"
+            android:textColor="#0070b5"
+            android:textSize="@dimen/_8sdp"
+            app:layout_constraintBottom_toTopOf="@id/newCustomer"
+            app:layout_constraintStart_toEndOf="@id/newCustomersBgIcon"
+            app:layout_constraintTop_toTopOf="@id/blueStick"
+            app:layout_constraintVertical_chainStyle="packed" />
+
+        <TextView
+            android:id="@+id/newCustomer"
+            android:layout_width="wrap_content"
+            android:layout_height="@dimen/_25sdp"
+            android:layout_marginStart="@dimen/_10sdp"
+            android:elevation="@dimen/_2sdp"
+            android:fontFamily="@font/poppins_bold"
+            android:text="20"
+            android:textColor="#ec5355"
+            android:textSize="@dimen/_18sdp"
+            app:layout_constraintBottom_toBottomOf="@id/blueStick"
+            app:layout_constraintStart_toEndOf="@id/newCustomersBgIcon"
+            app:layout_constraintTop_toBottomOf="@+id/newCustomer1Lbl" />
+
+        <TextView
+            android:id="@+id/totalNewCustomers"
+            android:layout_width="wrap_content"
+            android:layout_height="@dimen/_25sdp"
+            android:layout_marginStart="@dimen/_4sdp"
+            android:elevation="@dimen/_2sdp"
+            android:fontFamily="@font/poppins_bold"
+            android:text=" / 30"
+            android:textColor="@color/black"
+            android:textSize="@dimen/_18sdp"
+            app:layout_constraintBottom_toBottomOf="@id/newCustomer"
+            app:layout_constraintStart_toEndOf="@id/newCustomer" />
+
+
+        <View
+            android:id="@+id/noOfShopsBg"
+            android:layout_width="0dp"
+            android:layout_height="@dimen/_65sdp"
+            android:layout_marginStart="@dimen/_5sdp"
+            android:background="@color/white"
+            android:elevation="@dimen/_2sdp"
+            app:layout_constraintBottom_toBottomOf="@id/newCustomersBg"
+            app:layout_constraintEnd_toEndOf="@+id/userProfile"
+            app:layout_constraintStart_toEndOf="@id/newCustomersBg"
+            app:layout_constraintTop_toTopOf="@id/newCustomersBg" />
+
+        <View
+            android:id="@+id/greenStick"
+            android:layout_width="@dimen/_4sdp"
+            android:layout_height="0dp"
+            android:background="@drawable/green_gradient"
+            android:elevation="@dimen/_2sdp"
+            app:layout_constraintBottom_toBottomOf="@id/noOfShopsBg"
+            app:layout_constraintStart_toStartOf="@id/noOfShopsBg"
+            app:layout_constraintTop_toTopOf="@id/noOfShopsBg" />
+
+        <ImageView
+            android:id="@+id/noOfShopsBgIcon"
+            android:layout_width="@dimen/_25sdp"
+            android:layout_height="@dimen/_25sdp"
+            android:layout_marginStart="@dimen/_5sdp"
+            android:elevation="@dimen/_2sdp"
+            android:src="@drawable/ic_shop_vis"
+            app:layout_constraintBottom_toBottomOf="@id/greenStick"
+            app:layout_constraintStart_toEndOf="@+id/greenStick"
+            app:layout_constraintTop_toTopOf="@id/greenStick" />
+
+        <TextView
+            android:id="@+id/noOfShops1Lbl"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="@dimen/_10sdp"
+            android:elevation="@dimen/_2sdp"
+            android:fontFamily="@font/poppins_medium"
+            android:text="No. Of Shops Visit"
+            android:textColor="#3ab95c"
+            android:textSize="@dimen/_8sdp"
+            app:layout_constraintBottom_toTopOf="@id/noOfShops"
+            app:layout_constraintStart_toEndOf="@id/noOfShopsBgIcon"
+            app:layout_constraintTop_toTopOf="@id/greenStick"
+            app:layout_constraintVertical_chainStyle="packed" />
+
+        <TextView
+            android:id="@+id/noOfShops"
+            android:layout_width="wrap_content"
+            android:layout_height="@dimen/_25sdp"
+            android:layout_marginStart="@dimen/_10sdp"
+            android:elevation="@dimen/_2sdp"
+            android:fontFamily="@font/poppins_bold"
+            android:text="20"
+            android:textColor="#ec5355"
+            android:textSize="@dimen/_18sdp"
+            app:layout_constraintBottom_toBottomOf="@id/greenStick"
+            app:layout_constraintStart_toEndOf="@id/noOfShopsBgIcon"
+            app:layout_constraintTop_toBottomOf="@+id/noOfShops1Lbl" />
+
+        <TextView
+            android:id="@+id/totalNoOfShops"
+            android:layout_width="wrap_content"
+            android:layout_height="@dimen/_25sdp"
+            android:layout_marginStart="@dimen/_4sdp"
+            android:elevation="@dimen/_2sdp"
+            android:fontFamily="@font/poppins_bold"
+            android:text=" / 30"
+            android:textColor="@color/black"
+            android:textSize="@dimen/_18sdp"
+            app:layout_constraintBottom_toBottomOf="@id/noOfShops"
+            app:layout_constraintStart_toEndOf="@id/noOfShops" />
+
+
+        <com.google.android.material.card.MaterialCardView
+            android:id="@+id/productsBg"
+            android:layout_width="0dp"
+            android:layout_height="@dimen/_125sdp"
+            android:layout_marginTop="@dimen/_15sdp"
+            android:layout_marginEnd="@dimen/_5sdp"
+            app:cardBackgroundColor="@color/white"
+            android:elevation="@dimen/_2sdp"
+            app:cardCornerRadius="@dimen/_5sdp"
+            app:layout_constraintEnd_toStartOf="@+id/statsBg"
+            app:layout_constraintStart_toStartOf="@id/welcomeLbl"
+            app:layout_constraintTop_toBottomOf="@id/noOfShopsBg" />
+
+        <TextView
+            android:id="@+id/productLbl"
+            android:layout_width="wrap_content"
+            android:layout_height="@dimen/_15sdp"
+            android:layout_margin="@dimen/_5sdp"
+            android:elevation="@dimen/_2sdp"
+            android:fontFamily="@font/poppins_medium"
+            android:text="@string/products_lbl"
+            android:textColor="@color/black"
+            android:textSize="@dimen/_12sdp"
+            app:layout_constraintStart_toStartOf="@id/productsBg"
+            app:layout_constraintTop_toTopOf="@id/productsBg" />
+
+        <TextView
+            android:id="@+id/productListLbl"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:elevation="@dimen/_2sdp"
+            android:fontFamily="@font/poppins_medium"
+            android:text="@string/products_list_lbl"
+            android:textColor="@color/text_grey"
+            android:textSize="@dimen/_9sdp"
+            app:layout_constraintStart_toStartOf="@id/productLbl"
+            app:layout_constraintTop_toBottomOf="@id/productLbl" />
+
+        <ImageView
+            android:id="@+id/productLinkIcon"
+            android:layout_width="@dimen/_20sdp"
+            android:layout_height="@dimen/_20sdp"
+            android:elevation="@dimen/_2sdp"
+            android:scaleType="fitXY"
+            android:src="@drawable/ic_red_link"
+            android:layout_margin="@dimen/_10sdp"
+            app:layout_constraintStart_toStartOf="@id/productsBg"
+            app:layout_constraintBottom_toBottomOf="@id/productsBg"/>
+
+        <ImageView
+            android:id="@+id/productIcon"
+            android:layout_width="@dimen/_100sdp"
+            android:layout_height="@dimen/_100sdp"
+            android:elevation="@dimen/_2sdp"
+            android:scaleType="fitXY"
+            android:src="@drawable/product"
+            app:layout_constraintEnd_toEndOf="@id/productsBg"
+            app:layout_constraintBottom_toBottomOf="@id/productsBg"/>
+
+        <com.google.android.material.card.MaterialCardView
+
+            android:id="@+id/statsBg"
+            android:layout_width="0dp"
+            android:layout_height="@dimen/_125sdp"
+            android:layout_marginStart="@dimen/_5sdp"
+            android:background="@color/white"
+            android:elevation="@dimen/_2sdp"
+            app:cardCornerRadius="@dimen/_5sdp"
+            app:cardBackgroundColor="@color/white"
+            app:layout_constraintBottom_toBottomOf="@+id/productsBg"
+            app:layout_constraintEnd_toEndOf="@id/userProfile"
+            app:layout_constraintStart_toEndOf="@id/productsBg"
+            app:layout_constraintTop_toTopOf="@+id/productsBg" />
+
+        <TextView
+            android:id="@+id/statsLbl"
+            android:layout_width="wrap_content"
+            android:layout_height="@dimen/_15sdp"
+            android:layout_margin="@dimen/_5sdp"
+            android:elevation="@dimen/_2sdp"
+            android:fontFamily="@font/poppins_medium"
+            android:text="@string/stats_lbl"
+            android:textColor="@color/black"
+            android:textSize="@dimen/_12sdp"
+            app:layout_constraintStart_toStartOf="@id/statsBg"
+            app:layout_constraintTop_toTopOf="@id/statsBg" />
+
+        <TextView
+            android:id="@+id/staticLbl"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:elevation="@dimen/_2sdp"
+            android:fontFamily="@font/poppins_medium"
+            android:text="@string/statics_lbl"
+            android:textColor="@color/text_grey"
+            android:textSize="@dimen/_9sdp"
+            app:layout_constraintStart_toStartOf="@id/statsLbl"
+            app:layout_constraintTop_toBottomOf="@id/statsLbl" />
+
+        <ImageView
+            android:id="@+id/staticLinkIcon"
+            android:layout_width="@dimen/_20sdp"
+            android:layout_height="@dimen/_20sdp"
+            android:elevation="@dimen/_2sdp"
+            android:scaleType="fitXY"
+            android:src="@drawable/ic_red_link"
+            android:layout_margin="@dimen/_10sdp"
+            app:layout_constraintStart_toStartOf="@id/statsBg"
+            app:layout_constraintBottom_toBottomOf="@id/statsBg"/>
+
+        <ImageView
+            android:id="@+id/staticIcon"
+            android:layout_width="@dimen/_100sdp"
+            android:layout_height="@dimen/_100sdp"
+            android:elevation="@dimen/_2sdp"
+            android:scaleType="fitXY"
+            android:src="@drawable/stats"
+            app:layout_constraintEnd_toEndOf="@id/statsBg"
+            app:layout_constraintBottom_toBottomOf="@id/statsBg"/>
+
+        <com.google.android.material.card.MaterialCardView
+            android:id="@+id/offersBg"
+            android:layout_width="0dp"
+            android:layout_height="@dimen/_125sdp"
+            android:layout_marginTop="@dimen/_15sdp"
+            android:layout_marginEnd="@dimen/_5sdp"
+            android:background="@color/white"
+            android:elevation="@dimen/_2sdp"
+            app:cardCornerRadius="@dimen/_5sdp"
+            app:cardBackgroundColor="@color/white"
+            app:layout_constraintEnd_toStartOf="@+id/searchBg"
+            app:layout_constraintStart_toStartOf="@id/welcomeLbl"
+            app:layout_constraintTop_toBottomOf="@id/productsBg" />
+
+
+        <TextView
+            android:id="@+id/offersLbl"
+            android:layout_width="wrap_content"
+            android:layout_height="@dimen/_15sdp"
+            android:layout_margin="@dimen/_5sdp"
+            android:elevation="@dimen/_2sdp"
+            android:fontFamily="@font/poppins_medium"
+            android:text="@string/offers_lbl"
+            android:textColor="@color/black"
+            android:textSize="@dimen/_12sdp"
+            app:layout_constraintStart_toStartOf="@id/offersBg"
+            app:layout_constraintTop_toTopOf="@id/offersBg" />
+
+        <TextView
+            android:id="@+id/offerListLbl"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:elevation="@dimen/_2sdp"
+            android:fontFamily="@font/poppins_medium"
+            android:text="@string/offers_list_lbl"
+            android:textColor="@color/text_grey"
+            android:textSize="@dimen/_9sdp"
+            app:layout_constraintStart_toStartOf="@id/offersLbl"
+            app:layout_constraintTop_toBottomOf="@id/offersLbl" />
+
+        <ImageView
+            android:id="@+id/offersLinkIcon"
+            android:layout_width="@dimen/_20sdp"
+            android:layout_height="@dimen/_20sdp"
+            android:elevation="@dimen/_2sdp"
+            android:scaleType="fitXY"
+            android:src="@drawable/ic_red_link"
+            android:layout_margin="@dimen/_10sdp"
+            app:layout_constraintStart_toStartOf="@id/offersBg"
+            app:layout_constraintBottom_toBottomOf="@id/offersBg"/>
+
+        <ImageView
+            android:id="@+id/offersIcon"
+            android:layout_width="@dimen/_100sdp"
+            android:layout_height="@dimen/_100sdp"
+            android:elevation="@dimen/_2sdp"
+            android:scaleType="fitXY"
+            android:src="@drawable/offers"
+            app:layout_constraintEnd_toEndOf="@id/offersBg"
+            app:layout_constraintBottom_toBottomOf="@id/offersBg"/>
+
+        <com.google.android.material.card.MaterialCardView
+            android:id="@+id/searchBg"
+            android:layout_width="0dp"
+            android:layout_height="@dimen/_125sdp"
+            android:layout_marginStart="@dimen/_5sdp"
+            android:background="@color/white"
+            android:elevation="@dimen/_2sdp"
+            app:cardCornerRadius="@dimen/_5sdp"
+            app:cardBackgroundColor="@color/white"
+            app:layout_constraintBottom_toBottomOf="@+id/offersBg"
+            app:layout_constraintEnd_toEndOf="@id/userProfile"
+            app:layout_constraintStart_toEndOf="@id/productsBg"
+            app:layout_constraintTop_toTopOf="@+id/offersBg" />
+
+        <TextView
+            android:id="@+id/customerSearchLbl"
+            android:layout_width="wrap_content"
+            android:layout_height="@dimen/_15sdp"
+            android:layout_margin="@dimen/_5sdp"
+            android:elevation="@dimen/_2sdp"
+            android:fontFamily="@font/poppins_medium"
+            android:text="@string/customer_search_lbl"
+            android:textColor="@color/black"
+            android:textSize="@dimen/_12sdp"
+            app:layout_constraintStart_toStartOf="@id/searchBg"
+            app:layout_constraintTop_toTopOf="@id/searchBg" />
+
+        <TextView
+            android:id="@+id/searchLbl"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:elevation="@dimen/_2sdp"
+            android:fontFamily="@font/poppins_medium"
+            android:text="Search"
+            android:textColor="@color/text_grey"
+            android:textSize="@dimen/_9sdp"
+            app:layout_constraintStart_toStartOf="@id/customerSearchLbl"
+            app:layout_constraintTop_toBottomOf="@id/customerSearchLbl" />
+
+        <ImageView
+            android:id="@+id/customerLinkIcon"
+            android:layout_width="@dimen/_20sdp"
+            android:layout_height="@dimen/_20sdp"
+            android:elevation="@dimen/_2sdp"
+            android:scaleType="fitXY"
+            android:src="@drawable/ic_red_link"
+            android:layout_margin="@dimen/_10sdp"
+            app:layout_constraintStart_toStartOf="@id/searchBg"
+            app:layout_constraintBottom_toBottomOf="@id/searchBg"/>
+
+        <ImageView
+            android:id="@+id/customerIcon"
+            android:layout_width="@dimen/_125sdp"
+            android:layout_height="@dimen/_100sdp"
+            android:elevation="@dimen/_2sdp"
+            android:scaleType="fitXY"
+            android:src="@drawable/search"
+            app:layout_constraintEnd_toEndOf="@id/searchBg"
+            app:layout_constraintBottom_toBottomOf="@id/searchBg"/>
+
+
+        <androidx.constraintlayout.utils.widget.ImageFilterView
+            android:id="@+id/addCustomer"
+            android:layout_width="@dimen/_40sdp"
+            android:layout_height="@dimen/_40sdp"
+            android:src="@drawable/ic_add_customer"
+            android:elevation="@dimen/_4sdp"
+            android:layout_marginBottom="@dimen/_25sdp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/searchBg"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            android:layout_marginTop="@dimen/_15sdp"
+            />
+
+
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+</androidx.core.widget.NestedScrollView>

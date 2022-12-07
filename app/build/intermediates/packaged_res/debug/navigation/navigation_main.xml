@@ -1,0 +1,141 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/navigation_main"
+    app:startDestination="@id/homeFragment">
+
+    <fragment
+        android:id="@+id/homeFragment"
+        android:name="com.bb.bigbasketsalesapp.ui.fragments.home.HomeFragment"
+        android:label="fragment_home"
+        tools:layout="@layout/fragment_home" />
+    <fragment
+        android:id="@+id/addCustomerFragment"
+        android:name="com.bb.bigbasketsalesapp.ui.fragments.manageCustomers.AddCustomerFragment"
+        android:label="fragment_add_customer"
+        tools:layout="@layout/fragment_add_customer" >
+        <action
+            android:id="@+id/action_addCustomerFragment_to_customersListFragment"
+            app:destination="@id/customersListFragment"
+            app:popUpToInclusive="true"
+            app:popUpTo="@id/customersListFragment"/>
+
+        <action
+            android:id="@+id/action_addCustomerFragment_to_customersListFragment2"
+            app:destination="@id/customersListFragment"
+            app:popUpToInclusive="true"
+            app:popUpTo="@id/addCustomerFragment"/>
+    </fragment>
+    <fragment
+        android:id="@+id/addFollowUpsFragment"
+        android:name="com.bb.bigbasketsalesapp.ui.fragments.followUps.AddFollowUpsFragment"
+        android:label="fragment_add_follow_ups"
+        tools:layout="@layout/fragment_add_follow_ups" >
+        <action
+            android:id="@+id/action_addFollowUpsFragment_to_followUpListFragment"
+            app:destination="@id/followUpListFragment"
+            app:popUpTo="@id/followUpListFragment"
+            app:popUpToInclusive="true"/>
+    </fragment>
+    <fragment
+        android:id="@+id/addressFragment"
+        android:name="com.bb.bigbasketsalesapp.ui.fragments.manageCustomers.AddressFragment"
+        android:label="fragment_address"
+        tools:layout="@layout/fragment_address" >
+        <action
+            android:id="@+id/action_addressFragment_to_addCustomerFragment"
+            app:destination="@id/addCustomerFragment"
+            app:popUpTo="@id/addCustomerFragment"
+            app:popUpToInclusive="true"/>
+    </fragment>
+    <fragment
+        android:id="@+id/changePasswordLogin"
+        android:name="com.bb.bigbasketsalesapp.ui.fragments.changePasswordLogin.ChangePasswordLogin"
+        android:label="fragment_change_password_login"
+        tools:layout="@layout/fragment_change_password_login" />
+    <fragment
+        android:id="@+id/chatFragment"
+        android:name="com.bb.bigbasketsalesapp.ui.fragments.notificationMessages.ChatFragment"
+        android:label="fragment_chat"
+        tools:layout="@layout/fragment_chat" />
+    <fragment
+        android:id="@+id/customersListFragment"
+        android:name="com.bb.bigbasketsalesapp.ui.fragments.customersList.CustomersListFragment"
+        android:label="fragment_customers_list"
+        tools:layout="@layout/fragment_customers_list" />
+    <fragment
+        android:id="@+id/editProfileFragment"
+        android:name="com.bb.bigbasketsalesapp.ui.fragments.profile.EditProfileFragment"
+        android:label="fragment_edit_profile"
+        tools:layout="@layout/fragment_edit_profile" >
+        <action
+            android:id="@+id/action_editProfileFragment_to_profileFragment"
+            app:destination="@id/profileFragment"
+            app:popUpTo="@id/profileFragment"
+            app:popUpToInclusive="true"/>
+    </fragment>
+    <fragment
+        android:id="@+id/followUpListFragment"
+        android:name="com.bb.bigbasketsalesapp.ui.fragments.followUps.FollowUpListFragment"
+        android:label="fragment_follow_up_list"
+        tools:layout="@layout/fragment_follow_up_list" />
+    <fragment
+        android:id="@+id/targetVsSalesFragment"
+        android:name="com.bb.bigbasketsalesapp.ui.fragments.TargetVsSalesFragment"
+        android:label="fragment_target_vs_sales"
+        tools:layout="@layout/fragment_target_vs_sales" />
+    <fragment
+        android:id="@+id/messageListFragment"
+        android:name="com.bb.bigbasketsalesapp.ui.fragments.notificationMessages.MessageListFragment"
+        android:label="fragment_message_list"
+        tools:layout="@layout/fragment_message_list" />
+    <fragment
+        android:id="@+id/notificationsMessagesFragment"
+        android:name="com.bb.bigbasketsalesapp.ui.fragments.notificationMessages.NotificationsMessagesFragment"
+        android:label="fragment_notifications_messages"
+        tools:layout="@layout/fragment_notifications_messages" />
+    <fragment
+        android:id="@+id/offersFragment"
+        android:name="com.bb.bigbasketsalesapp.ui.fragments.offers.OffersFragment"
+        android:label="fragment_offers"
+        tools:layout="@layout/fragment_offers" />
+    <fragment
+        android:id="@+id/productListFragment"
+        android:name="com.bb.bigbasketsalesapp.ui.fragments.productList.ProductListFragment"
+        android:label="fragment_product_list"
+        tools:layout="@layout/fragment_product_list" />
+    <fragment
+        android:id="@+id/profileFragment"
+        android:name="com.bb.bigbasketsalesapp.ui.fragments.profile.ProfileFragment"
+        android:label="fragment_profile"
+        tools:layout="@layout/fragment_profile" />
+    <fragment
+        android:id="@+id/statisticsFragment"
+        android:name="com.bb.bigbasketsalesapp.ui.fragments.statistics.StatisticsFragment"
+        android:label="fragment_statistics"
+        tools:layout="@layout/fragment_statistics" />
+    <fragment
+        android:id="@+id/revenueFragment"
+        android:name="com.bb.bigbasketsalesapp.ui.fragments.revenue.RevenueFragment"
+        android:label="fragment_revenue"
+        tools:layout="@layout/fragment_revenue" />
+    <fragment
+        android:id="@+id/editCustomerFragment"
+        android:name="com.bb.bigbasketsalesapp.ui.fragments.manageCustomers.EditCustomerFragment"
+        android:label="fragment_edit_customer"
+        tools:layout="@layout/fragment_edit_customer" >
+        <action
+            android:id="@+id/action_editCustomerFragment_to_customersListFragment"
+            app:destination="@id/customersListFragment"
+            app:popUpTo="@id/customersListFragment"
+            app:popUpToInclusive="true"/>
+    </fragment>
+    <fragment
+        android:id="@+id/locationFragment"
+        android:name="com.bb.bigbasketsalesapp.ui.fragments.location.LocationFragment"
+        android:label="fragment_location"
+        tools:layout="@layout/fragment_location" />
+
+
+</navigation>

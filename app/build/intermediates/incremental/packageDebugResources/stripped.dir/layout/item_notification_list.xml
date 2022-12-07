@@ -1,0 +1,84 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginVertical="@dimen/_10sdp"
+    android:layout_marginHorizontal="@dimen/_3sdp"
+    android:elevation="@dimen/_4sdp"
+    app:cardCornerRadius="@dimen/_5sdp">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="@dimen/_10sdp">
+
+        <androidx.constraintlayout.utils.widget.ImageFilterView
+            android:id="@+id/notificationImage"
+            android:layout_width="@dimen/_25sdp"
+            android:layout_height="@dimen/_25sdp"
+            android:src="@drawable/ic_user_image"
+            app:roundPercent="1"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            />
+
+        <TextView
+            android:id="@+id/notificationTitle"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:text="Target Revised"
+            android:textSize="@dimen/_11sdp"
+            android:textColor="@color/black"
+            android:fontFamily="@font/poppins_medium"
+            android:layout_marginStart="@dimen/_5sdp"
+            app:layout_constraintEnd_toStartOf="@+id/notificationDate"
+            app:layout_constraintStart_toEndOf="@id/notificationImage"
+            app:layout_constraintTop_toTopOf="@id/notificationImage"
+            app:layout_constraintBottom_toBottomOf="@id/notificationImage"
+            />
+
+
+
+        <TextView
+            android:id="@+id/notificationDate"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:text="Apr 21"
+            android:textSize="@dimen/_8sdp"
+            android:textColor="@color/black"
+            android:layout_marginEnd="@dimen/_5sdp"
+            android:fontFamily="@font/poppins_medium"
+            app:layout_constraintEnd_toStartOf="@+id/greenDot"
+            app:layout_constraintTop_toTopOf="@id/notificationImage"
+            app:layout_constraintBottom_toBottomOf="@id/notificationImage"
+            />
+
+        <androidx.constraintlayout.utils.widget.ImageFilterView
+            android:id="@+id/greenDot"
+            android:layout_width="5dp"
+            android:layout_height="5dp"
+            app:roundPercent="1"
+            app:layout_constraintEnd_toEndOf="parent"
+            android:background="@color/green_dark"
+            app:layout_constraintTop_toTopOf="@id/notificationDate"
+            app:layout_constraintBottom_toBottomOf="@id/notificationDate"/>
+
+        <TextView
+            android:id="@+id/notificationDesc"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:text="In publishing and graphic design, Lorem ipsum is a placeholder text commonly used to demonstrate the visual form of a document or a typeface without relying on meaningful content."
+            android:textSize="@dimen/_7sdp"
+            android:textColor="@color/black_200"
+            android:fontFamily="@font/poppins_medium"
+            android:layout_marginStart="@dimen/_5sdp"
+            app:layout_constraintEnd_toStartOf="@+id/notificationDate"
+            app:layout_constraintStart_toEndOf="@id/notificationImage"
+            app:layout_constraintTop_toBottomOf="@+id/notificationTitle"
+            />
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+
+</androidx.cardview.widget.CardView>

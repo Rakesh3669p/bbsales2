@@ -1,0 +1,68 @@
+{
+  "project_info": {
+    "project_number": "918584839911",
+    "project_id": "bigbasket-ea6d2",
+    "storage_bucket": "bigbasket-ea6d2.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:918584839911:android:b7bf8c493f11ab098c5c42",
+        "android_client_info": {
+          "package_name": "com.bb.bigbasketsalesapp"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "918584839911-me08a45urjjktdbghrr5dt113g8dv2rk.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBb1d6XvE3M8wYTG4Jrn3O5jFg2ctLkhrc"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "918584839911-me08a45urjjktdbghrr5dt113g8dv2rk.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    },
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:918584839911:android:d992a178f0475f518c5c42",
+        "android_client_info": {
+          "package_name": "com.bigbasket"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "918584839911-me08a45urjjktdbghrr5dt113g8dv2rk.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBb1d6XvE3M8wYTG4Jrn3O5jFg2ctLkhrc"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "918584839911-me08a45urjjktdbghrr5dt113g8dv2rk.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

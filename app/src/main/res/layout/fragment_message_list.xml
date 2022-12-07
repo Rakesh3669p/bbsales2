@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    android:padding="@dimen/_5sdp"
+    tools:context=".ui.fragments.notificationMessages.MessageListFragment">
+
+    <androidx.constraintlayout.utils.widget.ImageFilterView
+        android:visibility="gone"
+        android:id="@+id/messageSearchView"
+        android:layout_width="@dimen/_50sdp"
+        android:layout_height="@dimen/_50sdp"
+        android:background="@color/grey_lite"
+        android:padding="@dimen/_10sdp"
+        android:src="@drawable/ic_search"
+        android:tint="@color/white"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:roundPercent="1" />
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:visibility="gone"
+        android:id="@+id/chatUsersRv"
+        android:layout_width="0dp"
+        android:layout_height="@dimen/_70sdp"
+        tools:listitem="@layout/item_chat_users"
+        app:layoutManager="androidx.recyclerview.widget.LinearLayoutManager"
+        android:orientation="horizontal"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@id/messageSearchView"
+        app:layout_constraintTop_toTopOf="@id/messageSearchView" />
+
+    <EditText
+        android:id="@+id/search"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginHorizontal="@dimen/_10sdp"
+        android:layout_marginTop="@dimen/_15sdp"
+        android:background="@drawable/search_box"
+        android:fontFamily="@font/poppins_medium"
+        android:hint="Search..."
+        android:paddingHorizontal="@dimen/_10sdp"
+        android:paddingVertical="@dimen/_8sdp"
+        android:textColor="@color/black_200"
+        android:textSize="@dimen/_9sdp"
+        app:layout_constraintTop_toTopOf="parent" />
+
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/messagesListRv"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        tools:listitem="@layout/item_message_list"
+        android:layout_marginTop="@dimen/_5sdp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="@id/messageSearchView"
+        app:layout_constraintTop_toBottomOf="@id/search" />
+
+    <TextView
+        android:id="@+id/noDataMsg"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="No Employees to show..."
+        android:fontFamily="@font/poppins_medium"
+        android:visibility="gone"
+        app:layout_constraintTop_toBottomOf="@id/search"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"/>
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

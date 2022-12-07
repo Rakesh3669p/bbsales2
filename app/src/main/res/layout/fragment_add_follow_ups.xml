@@ -1,0 +1,147 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    android:fitsSystemWindows="true"
+    android:windowSoftInputMode="adjustPan|stateAlwaysVisible"
+    tools:context=".ui.fragments.followUps.AddFollowUpsFragment">
+
+    <ImageView
+        android:id="@+id/backArrow"
+        android:layout_width="@dimen/_30sdp"
+        android:layout_height="@dimen/_30sdp"
+        android:layout_margin="@dimen/_10sdp"
+        android:padding="@dimen/_8sdp"
+        android:scaleType="fitXY"
+        android:src="@drawable/ic_back"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/addFollowUpsTitle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:fontFamily="@font/poppins_medium"
+        android:text="@string/add_follow_up_lbl"
+        android:textColor="@color/blue"
+        android:textSize="@dimen/_14sdp"
+        app:layout_constraintBottom_toBottomOf="@id/backArrow"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@id/backArrow" />
+
+    <Spinner
+        android:id="@+id/followUpSpinner"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginHorizontal="@dimen/_10sdp"
+        android:layout_marginTop="@dimen/_10sdp"
+        android:background="@drawable/bottom_line"
+        android:elevation="@dimen/_5sdp"
+        android:entries="@array/followUp"
+        android:fontFamily="@font/poppins_medium"
+        android:paddingVertical="@dimen/_8sdp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/backArrow" />
+
+    <TextView
+        android:id="@+id/remarksLbl"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/_15sdp"
+        android:fontFamily="@font/poppins_medium"
+        android:text="@string/remarks_lbl"
+        android:textColor="@color/black_200"
+        android:textSize="@dimen/_10sdp"
+        app:layout_constraintEnd_toEndOf="@id/followUpSpinner"
+        app:layout_constraintStart_toStartOf="@id/followUpSpinner"
+        app:layout_constraintTop_toBottomOf="@id/followUpSpinner" />
+
+
+    <EditText
+        android:id="@+id/remarkEdt"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:fontFamily="@font/poppins_medium"
+        android:gravity="bottom"
+        android:minHeight="@dimen/_80sdp"
+        android:text=""
+        android:textColor="@color/black_200"
+        android:textSize="@dimen/_11sdp"
+        app:layout_constraintEnd_toEndOf="@id/remarksLbl"
+        app:layout_constraintStart_toStartOf="@id/remarksLbl"
+        app:layout_constraintTop_toBottomOf="@+id/remarksLbl" />
+
+    <EditText
+        android:id="@+id/search"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/_10sdp"
+        android:layout_marginEnd="@dimen/_5sdp"
+        android:background="@drawable/search_box"
+        android:drawableStart="@drawable/ic_search"
+        android:drawablePadding="@dimen/_5sdp"
+        android:drawableTint="@color/text_grey"
+        android:fontFamily="@font/poppins_medium"
+        android:hint="Search Coupon"
+        android:paddingHorizontal="@dimen/_10sdp"
+        android:paddingVertical="@dimen/_8sdp"
+        android:textColor="@color/black_200"
+        android:textSize="@dimen/_9sdp"
+        app:layout_constraintEnd_toStartOf="@+id/upDownArrow"
+        app:layout_constraintStart_toStartOf="@id/remarkEdt"
+        app:layout_constraintTop_toBottomOf="@+id/remarkEdt" />
+
+    <ImageView
+        android:id="@+id/upDownArrow"
+        android:layout_width="@dimen/_20sdp"
+        android:layout_height="@dimen/_15sdp"
+        android:layout_marginStart="@dimen/_5sdp"
+        android:src="@drawable/up_down"
+        android:visibility="gone"
+        app:layout_constraintBottom_toBottomOf="@id/search"
+        app:layout_constraintEnd_toEndOf="@id/remarkEdt"
+        app:layout_constraintTop_toTopOf="@id/search"
+        app:tint="@color/black_200" />
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/followUpsOfferRv"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:layout_marginTop="@dimen/_5sdp"
+        tools:listitem="@layout/item_add_followup_coupons"
+        app:layout_constraintBottom_toTopOf="@+id/submit"
+        app:layout_constraintEnd_toEndOf="@id/upDownArrow"
+        app:layout_constraintStart_toStartOf="@id/search"
+        app:layout_constraintTop_toBottomOf="@id/search" />
+
+    <com.google.android.material.button.MaterialButton
+        android:id="@+id/submit"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="@dimen/_10sdp"
+        android:backgroundTint="@color/yellow"
+        android:fontFamily="@font/poppins_medium"
+        android:paddingVertical="@dimen/_8sdp"
+        android:text="@string/submit_lbl"
+        android:textColor="@color/blue"
+        app:cornerRadius="@dimen/_5sdp"
+        app:layout_constraintTop_toBottomOf="@+id/followUpsOfferRv"
+        app:layout_constraintBottom_toBottomOf="parent" />
+
+    <View
+        android:id="@+id/loader"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="@color/white"
+        android:elevation="@dimen/_5sdp"
+        android:visibility="gone"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintBottom_toBottomOf="parent"/>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

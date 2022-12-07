@@ -1,0 +1,158 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources xmlns:ns1="http://schemas.android.com/tools">
+    <array name="com_google_android_gms_fonts_certs">
+        <item>@array/com_google_android_gms_fonts_certs_dev</item>
+        <item>@array/com_google_android_gms_fonts_certs_prod</item>
+    </array>
+    <string-array name="com_google_android_gms_fonts_certs_dev">
+        <item>
+            MIIEqDCCA5CgAwIBAgIJANWFuGx90071MA0GCSqGSIb3DQEBBAUAMIGUMQswCQYDVQQGEwJVUzETMBEGA1UECBMKQ2FsaWZvcm5pYTEWMBQGA1UEBxMNTW91bnRhaW4gVmlldzEQMA4GA1UEChMHQW5kcm9pZDEQMA4GA1UECxMHQW5kcm9pZDEQMA4GA1UEAxMHQW5kcm9pZDEiMCAGCSqGSIb3DQEJARYTYW5kcm9pZEBhbmRyb2lkLmNvbTAeFw0wODA0MTUyMzM2NTZaFw0zNTA5MDEyMzM2NTZaMIGUMQswCQYDVQQGEwJVUzETMBEGA1UECBMKQ2FsaWZvcm5pYTEWMBQGA1UEBxMNTW91bnRhaW4gVmlldzEQMA4GA1UEChMHQW5kcm9pZDEQMA4GA1UECxMHQW5kcm9pZDEQMA4GA1UEAxMHQW5kcm9pZDEiMCAGCSqGSIb3DQEJARYTYW5kcm9pZEBhbmRyb2lkLmNvbTCCASAwDQYJKoZIhvcNAQEBBQADggENADCCAQgCggEBANbOLggKv+IxTdGNs8/TGFy0PTP6DHThvbbR24kT9ixcOd9W+EaBPWW+wPPKQmsHxajtWjmQwWfna8mZuSeJS48LIgAZlKkpFeVyxW0qMBujb8X8ETrWy550NaFtI6t9+u7hZeTfHwqNvacKhp1RbE6dBRGWynwMVX8XW8N1+UjFaq6GCJukT4qmpN2afb8sCjUigq0GuMwYXrFVee74bQgLHWGJwPmvmLHC69EH6kWr22ijx4OKXlSIx2xT1AsSHee70w5iDBiK4aph27yH3TxkXy9V89TDdexAcKk/cVHYNnDBapcavl7y0RiQ4biu8ymM8Ga/nmzhRKya6G0cGw8CAQOjgfwwgfkwHQYDVR0OBBYEFI0cxb6VTEM8YYY6FbBMvAPyT+CyMIHJBgNVHSMEgcEwgb6AFI0cxb6VTEM8YYY6FbBMvAPyT+CyoYGapIGXMIGUMQswCQYDVQQGEwJVUzETMBEGA1UECBMKQ2FsaWZvcm5pYTEWMBQGA1UEBxMNTW91bnRhaW4gVmlldzEQMA4GA1UEChMHQW5kcm9pZDEQMA4GA1UECxMHQW5kcm9pZDEQMA4GA1UEAxMHQW5kcm9pZDEiMCAGCSqGSIb3DQEJARYTYW5kcm9pZEBhbmRyb2lkLmNvbYIJANWFuGx90071MAwGA1UdEwQFMAMBAf8wDQYJKoZIhvcNAQEEBQADggEBABnTDPEF+3iSP0wNfdIjIz1AlnrPzgAIHVvXxunW7SBrDhEglQZBbKJEk5kT0mtKoOD1JMrSu1xuTKEBahWRbqHsXclaXjoBADb0kkjVEJu/Lh5hgYZnOjvlba8Ld7HCKePCVePoTJBdI4fvugnL8TsgK05aIskyY0hKI9L8KfqfGTl1lzOv2KoWD0KWwtAWPoGChZxmQ+nBli+gwYMzM1vAkP+aayLe0a1EQimlOalO762r0GXO0ks+UeXde2Z4e+8S/pf7pITEI/tP+MxJTALw9QUWEv9lKTk+jkbqxbsh8nfBUapfKqYn0eidpwq2AzVp3juYl7//fKnaPhJD9gs=
+        </item>
+    </string-array>
+    <string-array name="com_google_android_gms_fonts_certs_prod">
+        <item>
+            MIIEQzCCAyugAwIBAgIJAMLgh0ZkSjCNMA0GCSqGSIb3DQEBBAUAMHQxCzAJBgNVBAYTAlVTMRMwEQYDVQQIEwpDYWxpZm9ybmlhMRYwFAYDVQQHEw1Nb3VudGFpbiBWaWV3MRQwEgYDVQQKEwtHb29nbGUgSW5jLjEQMA4GA1UECxMHQW5kcm9pZDEQMA4GA1UEAxMHQW5kcm9pZDAeFw0wODA4MjEyMzEzMzRaFw0zNjAxMDcyMzEzMzRaMHQxCzAJBgNVBAYTAlVTMRMwEQYDVQQIEwpDYWxpZm9ybmlhMRYwFAYDVQQHEw1Nb3VudGFpbiBWaWV3MRQwEgYDVQQKEwtHb29nbGUgSW5jLjEQMA4GA1UECxMHQW5kcm9pZDEQMA4GA1UEAxMHQW5kcm9pZDCCASAwDQYJKoZIhvcNAQEBBQADggENADCCAQgCggEBAKtWLgDYO6IIrgqWbxJOKdoR8qtW0I9Y4sypEwPpt1TTcvZApxsdyxMJZ2JORland2qSGT2y5b+3JKkedxiLDmpHpDsz2WCbdxgxRczfey5YZnTJ4VZbH0xqWVW/8lGmPav5xVwnIiJS6HXk+BVKZF+JcWjAsb/GEuq/eFdpuzSqeYTcfi6idkyugwfYwXFU1+5fZKUaRKYCwkkFQVfcAs1fXA5V+++FGfvjJ/CxURaSxaBvGdGDhfXE28LWuT9ozCl5xw4Yq5OGazvV24mZVSoOO0yZ31j7kYvtwYK6NeADwbSxDdJEqO4k//0zOHKrUiGYXtqw/A0LFFtqoZKFjnkCAQOjgdkwgdYwHQYDVR0OBBYEFMd9jMIhF1Ylmn/Tgt9r45jk14alMIGmBgNVHSMEgZ4wgZuAFMd9jMIhF1Ylmn/Tgt9r45jk14aloXikdjB0MQswCQYDVQQGEwJVUzETMBEGA1UECBMKQ2FsaWZvcm5pYTEWMBQGA1UEBxMNTW91bnRhaW4gVmlldzEUMBIGA1UEChMLR29vZ2xlIEluYy4xEDAOBgNVBAsTB0FuZHJvaWQxEDAOBgNVBAMTB0FuZHJvaWSCCQDC4IdGZEowjTAMBgNVHRMEBTADAQH/MA0GCSqGSIb3DQEBBAUAA4IBAQBt0lLO74UwLDYKqs6Tm8/yzKkEu116FmH4rkaymUIE0P9KaMftGlMexFlaYjzmB2OxZyl6euNXEsQH8gjwyxCUKRJNexBiGcCEyj6z+a1fuHHvkiaai+KL8W1EyNmgjmyy8AW7P+LLlkR+ho5zEHatRbM/YAnqGcFh5iZBqpknHf1SKMXFh4dd239FJ1jWYfbMDMy3NS5CTMQ2XFI1MvcyUTdZPErjQfTbQe3aDQsQcafEQPD+nqActifKZ0Np0IS9L9kR/wbNvyz6ENwPiTrjV2KRkEjH78ZMcUQXg0L3BYHJ3lc69Vs5Ddf9uUGGMYldX3WfMBEmh/9iFBDAaTCK
+        </item>
+    </string-array>
+    <string-array name="followUp">
+        <item>Follow Up Type</item>
+    </string-array>
+    <string-array name="month_list">
+        <item>Month</item>
+        <item>January</item>
+        <item>February</item>
+        <item>March</item>
+        <item>April</item>
+        <item>May</item>
+        <item>June</item>
+        <item>July</item>
+        <item>August</item>
+        <item>September</item>
+        <item>October</item>
+        <item>November</item>
+        <item>December</item>
+    </string-array>
+    <array name="preloaded_fonts" translatable="false">
+        <item>@font/poppins</item>
+        <item>@font/poppins_bold</item>
+        <item>@font/poppins_extrabold</item>
+        <item>@font/poppins_medium</item>
+        <item>@font/poppins_semibold</item>
+        <item>@font/roboto</item>
+        <item>@font/roboto_bold</item>
+        <item>@font/roboto_medium</item>
+    </array>
+    <string-array name="year_list">
+        <item>Year</item>
+        <item>2020</item>
+        <item>2021</item>
+        <item>2022</item>
+        <item>2023</item>
+        <item>2024</item>
+        <item>2025</item>
+        <item>2026</item>
+        <item>2027</item>
+        <item>2029</item>
+        <item>2030</item>
+    </string-array>
+    <color name="black">#FF000000</color>
+    <color name="black_100">#222222</color>
+    <color name="black_200">#626262</color>
+    <color name="blue">#0070b5</color>
+    <color name="blue_dark">#0151ae</color>
+    <color name="green_dark">#029558</color>
+    <color name="grey_lite">#6A878787</color>
+    <color name="purple_200">#FFBB86FC</color>
+    <color name="purple_500">#FF6200EE</color>
+    <color name="purple_700">#FF3700B3</color>
+    <color name="red">#ec5355</color>
+    <color name="teal_200">#FF03DAC5</color>
+    <color name="teal_700">#FF018786</color>
+    <color name="text_grey">#c2c2c2</color>
+    <color name="white">#FFFFFFFF</color>
+    <color name="white_transparent">#00FFFFFF</color>
+    <color name="yellow">#fdf001</color>
+    <color name="yellow_lite">#fffa9c</color>
+    <string name="add_customer_lbl">Add Customer</string>
+    <string name="add_follow_up_lbl">Add Follow Up</string>
+    <string name="add_lbl">Add</string>
+    <string name="address_lbl">Address</string>
+    <string name="app_name">BigBasketSalesApp</string>
+    <string name="apply_lbl">Apply</string>
+    <string name="basic_details_lbl">Basic Details</string>
+    <string name="business_details_lbl">Business Details</string>
+    <string name="chain_lbl">Chain</string>
+    <string name="change_password_lbl">Change Password</string>
+    <string name="com.google.firebase.crashlytics.mapping_file_id" ns1:ignore="UnusedResources,TypographyDashes" translatable="false">00000000000000000000000000000000</string>
+    <string name="competitors_domain_lbl"><![CDATA[Competitors & Domain]]></string>
+    <string name="confirm_lbl">Confirm</string>
+    <string name="confirm_location_lbl">Confirm Location</string>
+    <string name="confirm_password">Confirm Password</string>
+    <string name="confirm_password_lbl">Confirm Password</string>
+    <string name="current_password_lbl">Current Password</string>
+    <string name="customer_list_lbl">Customer List</string>
+    <string name="customer_search_lbl">Customer Search</string>
+    <string name="default_web_client_id" translatable="false">918584839911-me08a45urjjktdbghrr5dt113g8dv2rk.apps.googleusercontent.com</string>
+    <string name="edit_customer_lbl">Edit Customer</string>
+    <string name="edit_profile_lbl">Edit Profile</string>
+    <string name="follow_up_list_lbl">Follow Up List</string>
+    <string name="forgot_password_instructions">Enter the email address or mobile number associated with your account.</string>
+    <string name="forgot_password_lbl">Forgot Password?</string>
+    <string name="gcm_defaultSenderId" translatable="false">918584839911</string>
+    <string name="google_api_key" translatable="false">AIzaSyBb1d6XvE3M8wYTG4Jrn3O5jFg2ctLkhrc</string>
+    <string name="google_app_id" translatable="false">1:918584839911:android:b7bf8c493f11ab098c5c42</string>
+    <string name="google_crash_reporting_api_key" translatable="false">AIzaSyBb1d6XvE3M8wYTG4Jrn3O5jFg2ctLkhrc</string>
+    <string name="google_map_api_key">AIzaSyD6dYxu1qeyLFAQJ9aqaQQTs5rifQkraz0</string>
+    <string name="google_storage_bucket" translatable="false">bigbasket-ea6d2.appspot.com</string>
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="individual_lbl">Individual</string>
+    <string name="needs_amp_competitors_lbl"><![CDATA[Needs & Competitors]]></string>
+    <string name="new_password_lbl">New Password</string>
+    <string name="offer_list_lbl">Offer List</string>
+    <string name="offers_lbl">Offers</string>
+    <string name="offers_list_lbl">offers List</string>
+    <string name="onboarding_rate_lbl">Onboarding Rate</string>
+    <string name="password_lbl">New Password</string>
+    <string name="product_list_lbl">Product List</string>
+    <string name="products_lbl">Products</string>
+    <string name="products_list_lbl">Products List</string>
+    <string name="profile_lbl">Profile</string>
+    <string name="project_id" translatable="false">bigbasket-ea6d2</string>
+    <string name="remarks_lbl">Remarks</string>
+    <string name="resend_code_lbl">Resend Code?</string>
+    <string name="revenue_lbl">Revenue</string>
+    <string name="save_lbl">Save</string>
+    <string name="send_otp_lbl">Send OTP</string>
+    <string name="something_went_wrong">Something Went Wrong...</string>
+    <string name="statics_lbl">statics</string>
+    <string name="statistics_lbl">Statistics</string>
+    <string name="stats_lbl">Stats</string>
+    <string name="submit_lbl">Submit</string>
+    <string name="target_vs_sales_lbl">Target Vs Sales</string>
+    <string name="upload_cr_lbl">Upload Cr</string>
+    <string name="upload_menu_lbl">Upload Menu</string>
+    <string name="upload_store_board_lbl">Upload Store Board</string>
+    <string name="upload_vat_lbl">Upload Vat</string>
+    <string name="verification_instructions">Enter the verification code we just sent you on your email address.</string>
+    <string name="version_live">v 1.0.1</string>
+    <string name="welcome_lbl">Welcome</string>
+    <style name="Theme.BigBasketSalesApp" parent="Theme.MaterialComponents.Light.NoActionBar">
+        <item name="colorPrimary">@color/black</item>
+        <item name="colorPrimaryVariant">@color/black_200</item>
+        <item name="colorOnPrimary">@color/white</item>
+        <item name="colorSecondary">@color/teal_200</item>
+        <item name="colorSecondaryVariant">@color/teal_700</item>
+        <item name="colorOnSecondary">@color/black</item>
+        <item name="android:statusBarColor" ns1:targetApi="l">@color/white</item>
+    </style>
+    <style name="spinnerTheme" parent="@android:style/Widget.Holo.DropDownItem.Spinner">
+        <item name="android:fontFamily">@font/poppins_medium</item>
+        <item name="android:textSize">@dimen/_7sdp</item>
+        <item name="android:textColor">@color/blue</item>
+    </style>
+    <style name="splashScreenTheme" parent="Theme.MaterialComponents.Light.NoActionBar">
+        <item name="android:windowBackground">@drawable/splash_image</item>
+        <item name="android:statusBarColor">@color/blue</item>
+
+    </style>
+</resources>

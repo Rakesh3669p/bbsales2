@@ -1,0 +1,117 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    android:paddingHorizontal="@dimen/_10sdp"
+    tools:context=".ui.fragments.notificationMessages.NotificationsMessagesFragment">
+
+    <ImageView
+        android:id="@+id/backArrow"
+        android:layout_width="@dimen/_30sdp"
+        android:layout_height="@dimen/_30sdp"
+        android:layout_margin="@dimen/_5sdp"
+        android:padding="@dimen/_8sdp"
+        android:scaleType="fitXY"
+        android:src="@drawable/ic_back"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <View
+        android:id="@+id/notificationView"
+        android:layout_width="0dp"
+        android:layout_height="@dimen/_25sdp"
+        android:background="@drawable/left_corner_blue_radius"
+        android:elevation="@dimen/_2sdp"
+        android:layout_marginTop="@dimen/_5sdp"
+        app:layout_constraintEnd_toStartOf="@+id/messagesView"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/backArrow" />
+
+    <TextView
+        android:id="@+id/notificationsLbl"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:elevation="@dimen/_4sdp"
+        android:text="Notifications"
+        android:fontFamily="@font/poppins_medium"
+        android:textColor="@color/white"
+        app:layout_constraintBottom_toBottomOf="@id/notificationView"
+        app:layout_constraintEnd_toStartOf="@+id/notificationsCount"
+        app:layout_constraintHorizontal_chainStyle="packed"
+        app:layout_constraintStart_toStartOf="@id/notificationView"
+        app:layout_constraintTop_toTopOf="@id/notificationView" />
+
+    <TextView
+        android:visibility="gone"
+
+        android:id="@+id/notificationsCount"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="@dimen/_10sdp"
+        android:background="@drawable/yellow_circle"
+        android:elevation="@dimen/_2sdp"
+        android:fontFamily="@font/poppins_medium"
+        android:paddingHorizontal="@dimen/_4sdp"
+        android:text=""
+        android:textColor="@color/blue"
+        android:textSize="@dimen/_7sdp"
+        app:layout_constraintBottom_toBottomOf="@id/notificationsLbl"
+        app:layout_constraintEnd_toStartOf="@+id/messagesView"
+        app:layout_constraintStart_toEndOf="@id/notificationsLbl"
+        app:layout_constraintTop_toTopOf="@id/notificationsLbl" />
+
+    <View
+        android:id="@+id/messagesView"
+        android:layout_width="0dp"
+        android:layout_height="@dimen/_25sdp"
+        android:background="@drawable/right_corner_radius"
+        android:elevation="@dimen/_2sdp"
+        android:layout_marginTop="@dimen/_5sdp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/notificationView"
+        app:layout_constraintTop_toBottomOf="@id/backArrow" />
+
+    <TextView
+        android:id="@+id/messagesViewLbl"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:elevation="@dimen/_2sdp"
+        android:text="Messages"
+        android:fontFamily="@font/poppins_medium"
+        android:textColor="@color/blue"
+        app:layout_constraintBottom_toBottomOf="@id/messagesView"
+        app:layout_constraintEnd_toStartOf="@+id/messagesViewCount"
+        app:layout_constraintHorizontal_chainStyle="packed"
+        app:layout_constraintStart_toStartOf="@id/messagesView"
+        app:layout_constraintTop_toTopOf="@id/messagesView" />
+
+    <TextView
+        android:visibility="gone"
+        android:id="@+id/messagesViewCount"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="@dimen/_10sdp"
+        android:background="@drawable/yellow_circle"
+        android:elevation="@dimen/_2sdp"
+        android:fontFamily="@font/poppins_medium"
+        android:paddingHorizontal="@dimen/_4sdp"
+        android:text="6"
+        android:textColor="@color/blue"
+        android:textSize="@dimen/_7sdp"
+        app:layout_constraintBottom_toBottomOf="@id/messagesViewLbl"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@id/messagesViewLbl"
+        app:layout_constraintTop_toTopOf="@id/messagesViewLbl" />
+
+    <androidx.viewpager2.widget.ViewPager2
+        android:id="@+id/viewPager"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_marginTop="@dimen/_10sdp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/messagesView"/>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

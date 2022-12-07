@@ -1,0 +1,159 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    tools:context=".ui.fragments.followUps.FollowUpListFragment">
+
+
+    <ImageView
+        android:id="@+id/backArrow"
+        android:layout_width="@dimen/_30sdp"
+        android:layout_height="@dimen/_30sdp"
+        android:layout_margin="@dimen/_10sdp"
+        android:padding="@dimen/_8sdp"
+        android:scaleType="fitXY"
+        android:src="@drawable/ic_back"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/customerListTitle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:fontFamily="@font/poppins_medium"
+        android:text="@string/follow_up_list_lbl"
+        android:textColor="@color/blue"
+        android:textSize="@dimen/_14sdp"
+        app:layout_constraintBottom_toBottomOf="@id/backArrow"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@id/backArrow" />
+
+    <androidx.cardview.widget.CardView
+        android:id="@+id/followUpCv"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginHorizontal="@dimen/_10sdp"
+        android:elevation="@dimen/_2sdp"
+        app:cardCornerRadius="@dimen/_5sdp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/backArrow">
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <androidx.constraintlayout.utils.widget.ImageFilterView
+                android:id="@+id/followUpImage"
+                android:layout_width="@dimen/_100sdp"
+                android:layout_height="@dimen/_60sdp"
+                android:layout_margin="@dimen/_10sdp"
+                android:scaleType="fitXY"
+                android:src="@drawable/ic_user_image"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                app:roundPercent="0.2" />
+
+            <TextView
+                android:id="@+id/followUpCode"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginHorizontal="@dimen/_15sdp"
+                android:layout_marginTop="@dimen/_5sdp"
+                android:background="@color/yellow_lite"
+                android:fontFamily="@font/poppins_semibold"
+                android:paddingHorizontal="@dimen/_5sdp"
+                android:paddingVertical="@dimen/_2sdp"
+                android:text="#8v654s"
+                android:textColor="@color/red"
+                android:textSize="@dimen/_7sdp"
+                app:layout_constraintEnd_toEndOf="@id/followUpImage"
+                app:layout_constraintStart_toStartOf="@id/followUpImage"
+                app:layout_constraintTop_toBottomOf="@+id/followUpImage"
+                app:layout_constraintVertical_chainStyle="packed" />
+
+            <TextView
+                android:id="@+id/followUpName"
+                android:layout_width="wrap_content"
+                android:layout_height="@dimen/_16sdp"
+                android:layout_marginBottom="@dimen/_5sdp"
+                android:fontFamily="@font/poppins_semibold"
+                android:text="MCDonald's"
+                android:textColor="@color/black"
+                android:textSize="@dimen/_12sdp"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="@id/followUpImage"
+                app:layout_constraintStart_toStartOf="@+id/followUpImage"
+                app:layout_constraintTop_toBottomOf="@id/followUpCode" />
+
+            <TextView
+                android:id="@+id/revenueCity"
+                android:layout_width="wrap_content"
+                android:layout_height="16dp"
+                android:layout_marginStart="@dimen/_5sdp"
+                android:fontFamily="@font/poppins_medium"
+                android:text="(Dubai)"
+                android:textColor="@color/black_200"
+                android:textSize="@dimen/_8sdp"
+                app:layout_constraintBottom_toBottomOf="@+id/followUpName"
+                app:layout_constraintStart_toEndOf="@id/followUpName" />
+
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+    </androidx.cardview.widget.CardView>
+
+    <TextView
+        android:id="@+id/followUpsLbl"
+        android:layout_width="wrap_content"
+        android:layout_height="@dimen/_16sdp"
+        android:layout_marginTop="@dimen/_10sdp"
+        android:layout_marginBottom="@dimen/_5sdp"
+        android:fontFamily="@font/poppins_semibold"
+        android:text="Follow Ups"
+        android:textColor="@color/black"
+        android:textSize="@dimen/_11sdp"
+        app:layout_constraintStart_toStartOf="@+id/followUpCv"
+        app:layout_constraintTop_toBottomOf="@id/followUpCv" />
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/followUpRv"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:layout_marginTop="@dimen/_5sdp"
+        app:layout_constraintBottom_toTopOf="@id/addFollowUps"
+        app:layout_constraintEnd_toEndOf="@id/followUpCv"
+        app:layout_constraintStart_toStartOf="@id/followUpsLbl"
+        app:layout_constraintTop_toBottomOf="@+id/followUpsLbl"
+        tools:listitem="@layout/item_follow_ups" />
+
+    <TextView
+        android:visibility="gone"
+        android:id="@+id/noDataMsg"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="No Follow Ups to show.."
+        android:fontFamily="@font/poppins_medium"
+        app:layout_constraintBottom_toTopOf="@id/addFollowUps"
+        app:layout_constraintEnd_toEndOf="@id/followUpCv"
+        app:layout_constraintStart_toStartOf="@id/followUpsLbl"
+        app:layout_constraintTop_toBottomOf="@+id/followUpsLbl"
+        />
+
+    <com.google.android.material.button.MaterialButton
+        android:id="@+id/addFollowUps"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="@dimen/_10sdp"
+        android:backgroundTint="@color/yellow"
+        android:fontFamily="@font/poppins_medium"
+        android:paddingVertical="@dimen/_8sdp"
+        android:text="@string/add_lbl"
+        android:textColor="@color/blue"
+        app:cornerRadius="@dimen/_5sdp"
+        app:layout_constraintBottom_toBottomOf="parent" />
+</androidx.constraintlayout.widget.ConstraintLayout>

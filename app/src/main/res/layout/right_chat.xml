@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:padding="@dimen/_5sdp"
+    android:background="@color/white"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <TextView
+        android:id="@+id/rightChatDateTime"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:visibility="gone"
+        android:text="11:45 Am | 01/02/2022 | Tuesday"
+        android:textColor="@color/black_200"
+        android:textSize="@dimen/_9sdp"
+        android:fontFamily="@font/poppins_medium"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        />
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:background="@drawable/right_chat_view"
+        android:layout_marginStart="@dimen/_45sdp"
+        android:layout_marginTop="@dimen/_5sdp"
+        app:layout_constraintHorizontal_bias="1"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/rightChatDateTime"
+        app:layout_constraintEnd_toEndOf="parent">
+
+
+        <TextView
+            android:id="@+id/rightChatText"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:maxWidth="@dimen/_240sdp"
+            android:minWidth="@dimen/_120sdp"
+            android:text="Lorem ipsum "
+            android:textColor="@color/black"
+            android:textSize="@dimen/_9sdp"
+            android:padding="@dimen/_6sdp"
+            android:fontFamily="@font/poppins_medium"/>
+
+        <TextView
+            android:id="@+id/messageTime"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="12:00AM"
+            android:textColor="@color/black_100"
+            android:textSize="@dimen/_8sdp"
+            android:padding="@dimen/_6sdp"
+            android:fontFamily="@font/poppins_semibold"
+            android:layout_gravity="end"
+            />
+    </LinearLayout>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:padding="@dimen/_15sdp"
+    android:background="@drawable/top_corner_radius"
+    tools:context=".ui.loginSignUp.LoginFragment">
+
+    <TextView
+        android:id="@+id/loginLbl"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Login"
+        android:textSize="@dimen/_20sdp"
+        android:textColor="@color/blue"
+        android:layout_marginTop="@dimen/_10sdp"
+        android:fontFamily="@font/poppins_semibold"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"/>
+
+    <EditText
+        android:id="@+id/userNameEdt"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Username or email id"
+        android:fontFamily="@font/poppins_medium"
+        android:singleLine="true"
+        android:textSize="@dimen/_10sdp"
+        android:layout_marginTop="@dimen/_15sdp"
+        android:paddingHorizontal="@dimen/_10sdp"
+        android:background="@drawable/edt_box"
+        android:paddingVertical="@dimen/_12sdp"
+        app:layout_constraintTop_toBottomOf="@id/loginLbl"/>
+
+    <EditText
+        android:id="@+id/passwordEdt"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="password"
+        android:fontFamily="@font/poppins_medium"
+        android:textSize="@dimen/_10sdp"
+        android:singleLine="true"
+        android:layout_marginTop="@dimen/_15sdp"
+        android:paddingHorizontal="@dimen/_10sdp"
+        android:background="@drawable/edt_box"
+        android:paddingVertical="@dimen/_12sdp"
+        android:inputType="textPassword"
+        app:layout_constraintTop_toBottomOf="@id/userNameEdt"/>
+
+    <com.google.android.material.button.MaterialButton
+        android:id="@+id/loginSubmit"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Login"
+        android:textColor="@color/blue"
+        android:layout_marginTop="@dimen/_15sdp"
+        android:paddingVertical="@dimen/_8sdp"
+        android:fontFamily="@font/poppins_medium"
+        app:cornerRadius="@dimen/_5sdp"
+        android:backgroundTint="@color/yellow"
+        app:layout_constraintTop_toBottomOf="@id/passwordEdt"/>
+
+    <TextView
+        android:id="@+id/forgotPasswordLbl"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/forgot_password_lbl"
+        android:layout_marginTop="@dimen/_5sdp"
+        android:textSize="@dimen/_9sdp"
+        android:textColor="@color/blue"
+        android:fontFamily="@font/poppins_medium"
+        android:layout_marginBottom="@dimen/_25sdp"
+        app:layout_constraintVertical_bias="0"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/loginSubmit"
+        app:layout_constraintEnd_toEndOf="@id/loginSubmit"
+        />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
